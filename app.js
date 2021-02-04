@@ -3,6 +3,5 @@ let btn = document.getElementById('btn');
 
 btn.addEventListener("click",()=>{
   let link = `https://api.whatsapp.com/send?phone=${no}`;
-    alert(link);
     window.open(link);
 })
