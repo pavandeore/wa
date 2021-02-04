@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-  <style>
-      .container{
-          display: flex;
-          justify-content: center;
-          padding: 20px;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style>
+      .heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 100px;
       }
-      #btn{
-          background-color: rgb(101, 212, 101);
-          color: #fff;
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 50vh;
       }
-  </style>
-</head>
-<body>
-
+      #btn {
+        background-color: rgb(68, 151, 68);
+        color: #fff;
+        padding: 10px;
+        width: 120px;
+        margin: 10px;
+        font-weight: 800;
+      }
+      #btn:hover{
+          cursor: pointer;
+      }
+      #no {
+        padding: 15px;
+        width: 250px;
+        margin: 15;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="heading">Enter No & Chat on Whatsapp</div>
     <div class="container">
-        <input type="text" id="no" />
-        <button id="btn">Chat on Whatsapp</button>
-              
+      <input type="text" maxlength="10" id="no" placeholder="Enter Number here" /><br />
+      <button id="btn">Chat &nbsp;&nbsp;<i class="fa fa-whatsapp"></i></button>
     </div>
-  
-  <script src="./app.js">
 
-  </script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
