@@ -1,9 +1,8 @@
-let no = document.getElementById('no').value;
+
 let btn = document.getElementById('btn');
 
 btn.addEventListener("click",()=>{
-  let link = "https://api.whatsapp.com/send?phone=91"+no;
-//   alert(link);
+  let no = document.getElementById('no').value;
+  let link = "https://wa.me/"+no;
     window.open(link);
-    no = "";
 })
